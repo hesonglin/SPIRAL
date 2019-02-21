@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="SpiralBase">
+      <UniqueIdentifier>{1dfd6b83-8bed-42f9-91f5-712cb9fbb16f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralNet">
+      <UniqueIdentifier>{b4657fb1-a987-4650-a898-ca5da349911b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralNoSql">
+      <UniqueIdentifier>{6f4fc1b7-dc15-46d1-ae8d-46e8583b6bff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralSql">
+      <UniqueIdentifier>{605a2a56-edb0-4b94-94ad-460f075873e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralDbBuffer">
+      <UniqueIdentifier>{73faedba-9709-4533-9b0c-73f0311e8b83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralNet\SpiralNetManager.h">
+      <Filter>SpiralNet</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralBase\BaseThread.h">
+      <Filter>SpiralBase</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralSqlManager.h">
+      <Filter>SpiralSql</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralNoSqlManager.h">
+      <Filter>SpiralNoSql</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralDbBuffer.h">
+      <Filter>SpiralDbBuffer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Spiral_DBServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralNet\SpiralNetManager.cpp">
+      <Filter>SpiralNet</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralBase\BaseThread.cpp">
+      <Filter>SpiralBase</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralSqlManager.cpp">
+      <Filter>SpiralSql</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralNoSqlManager.cpp">
+      <Filter>SpiralNoSql</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralDbBuffer.cpp">
+      <Filter>SpiralDbBuffer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

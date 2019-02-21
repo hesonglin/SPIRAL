@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="SpiralBase">
+      <UniqueIdentifier>{ee322f21-e415-44ee-a73d-fb9aa16e42de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralNet">
+      <UniqueIdentifier>{8583ccec-ed70-4951-8dbc-84f18b3a981a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralStream">
+      <UniqueIdentifier>{3daf4a9e-b9d2-4df1-ae60-a0069e5be0ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralScript">
+      <UniqueIdentifier>{5fd102e6-4cdc-4ca5-a521-73f772acbb33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralScript\LuaModule">
+      <UniqueIdentifier>{76759227-d05e-4b33-84b4-8d3597cb873f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralScript\LuaExport">
+      <UniqueIdentifier>{e2d4bd8d-6c0f-467a-b2ea-5c6b2f20ff05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralNet\SpiralNetManager.h">
+      <Filter>SpiralNet</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralBase\BaseThread.h">
+      <Filter>SpiralBase</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralNetThread.h">
+      <Filter>SpiralNet</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralNetIO.h">
+      <Filter>SpiralStream</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaScript.h">
+      <Filter>SpiralScript\LuaModule</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemLuaExport.h">
+      <Filter>SpiralScript\LuaExport</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamLuaExport.h">
+      <Filter>SpiralScript\LuaExport</Filter>
+    </ClInclude>
+    <ClInclude Include="Student.h">
+      <Filter>SpiralScript\LuaExport</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Spiral.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralNet\SpiralNetManager.cpp">
+      <Filter>SpiralNet</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralBase\BaseThread.cpp">
+      <Filter>SpiralBase</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralNetThread.cpp">
+      <Filter>SpiralNet</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralNetIO.cpp">
+      <Filter>SpiralStream</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaScript.cpp">
+      <Filter>SpiralScript\LuaModule</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemLuaExport.cpp">
+      <Filter>SpiralScript\LuaExport</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamLuaExport.cpp">
+      <Filter>SpiralScript\LuaExport</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>SpiralScript\LuaExport</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_Student.cpp">
+      <Filter>SpiralScript\LuaExport</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_SystemLuaExport.cpp">
+      <Filter>SpiralScript\LuaExport</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StreamLuaExport.pkg">
+      <Filter>SpiralScript\LuaExport</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Student.pkg">
+      <Filter>SpiralScript\LuaExport</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SystemLuaExport.pkg">
+      <Filter>SpiralScript\LuaExport</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

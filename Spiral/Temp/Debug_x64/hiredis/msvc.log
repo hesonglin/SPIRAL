@@ -1,0 +1,69 @@
+﻿  sds.c
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(54): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(84): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(105): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(123): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(124): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(136): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(137): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(158): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(159): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(219): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(220): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(230): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(234): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(242): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(250): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(251): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(256): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(262): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\sds.c(275): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  net.c
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\net.c(265): warning C4133: “函数”: 从“size_t *”到“int *”的类型不兼容
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\net.c(392): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\net.c(378): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1850): note: 参见“inet_addr”的声明
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\net.c(382): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2238): note: 参见“gethostbyname”的声明
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\net.c(405): warning C4477: “sprintf_s”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“LPVOID”
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\net.c(428): warning C4477: “sprintf_s”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“LPVOID”
+  hiredis.c
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(124): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(292): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(352): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(431): warning C4267: “=”: 从“size_t”转换到“unsigned long”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(683): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(713): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(744): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(901): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(930): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(916): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(923): warning C4477: “sprintf”: 格式字符串“%u”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“std::size_t”
+  c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(923): note: 请考虑在格式字符串中使用“%zu”
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(923): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(994): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(1015): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(1002): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(1009): warning C4477: “sprintf”: 格式字符串“%u”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“std::size_t”
+  c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(1009): note: 请考虑在格式字符串中使用“%zu”
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(1009): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\hiredis.c(1205): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+  dict.c
+  async.c
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\async.c(70): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\async.c(86): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\async.c(87): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\async.c(355): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: 参见“stricmp”的声明
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\async.c(578): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(579): note: 参见“strnicmp”的声明
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\async.c(593): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(579): note: 参见“strnicmp”的声明
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\hiredis\hiredis_win\hiredis\async.c(605): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(579): note: 参见“strnicmp”的声明
+  正在生成代码...
+  msvc.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\\Dependencies\lib\Debug\hiredis.lib

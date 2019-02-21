@@ -1,0 +1,9 @@
+SystemTable = {
+  --聊天系统        
+  [1] = { 
+	ScriptFile = "system\\ChatSystem\\chatSystem.lua", 
+	Flag = "SYS_NPC_1", 
+  },
+  
+  }
+  

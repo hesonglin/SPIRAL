@@ -1,0 +1,4 @@
+﻿  SpiralNoSqlManager.cpp
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\spiral_dbserver\spiralnosqlmanager.cpp(61): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+  Spiral_DBServer.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\x64\Debug\Spiral_DBServer.exe
+  Spiral_DBServer.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\x64\Debug\Spiral_DBServer.pdb (Full PDB)

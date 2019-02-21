@@ -1,0 +1,30 @@
+﻿  buffer.c
+  bufferevent.c
+  bufferevent_async.c
+  bufferevent_filter.c
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\libevent\buffer.c(3107): warning C4244: “函数”: 从“__int64”转换到“unsigned int”，可能丢失数据
+  bufferevent_pair.c
+  bufferevent_ratelim.c
+  bufferevent_sock.c
+  buffer_iocp.c
+  evdns.c
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\libevent\bufferevent_sock.c(267): warning C4244: “函数”: 从“intptr_t”转换到“int”，可能丢失数据
+  event.c
+  event_iocp.c
+  event_tagging.c
+  evmap.c
+  evrpc.c
+  evthread.c
+  evthread_win32.c
+  evutil.c
+  evutil_rand.c
+  evutil_time.c
+  http.c
+  listener.c
+  log.c
+  signal.c
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\libevent\evutil_time.c(537): warning C4244: “=”: 从“__int64”转换到“long”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\dependencies\libevent\evutil_time.c(542): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+  strlcpy.c
+  win32select.c
+  libevent.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\\Dependencies\lib\Debug\libevent.lib
