@@ -1,0 +1,32 @@
+﻿  Performing Custom Build Tools
+  Student.cpp
+  main.cpp
+  lua_Student.cpp
+  正在生成代码...
+lua_Student.obj : error LNK2019: 无法解析的外部符号 lua_gettop，该符号在函数 "int __cdecl tolua_server_Student_new00_local(struct lua_State *)" (?tolua_server_Student_new00_local@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_error，该符号在函数 "int __cdecl tolua_server_Student_Run00(struct lua_State *)" (?tolua_server_Student_Run00@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_isnoobj，该符号在函数 "int __cdecl tolua_server_Student_Run00(struct lua_State *)" (?tolua_server_Student_Run00@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_isnumber，该符号在函数 "int __cdecl tolua_server_Student_Run200(struct lua_State *)" (?tolua_server_Student_Run200@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_isusertable，该符号在函数 "int __cdecl tolua_server_Student_new00(struct lua_State *)" (?tolua_server_Student_new00@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_isusertype，该符号在函数 "int __cdecl tolua_server_Student_Run00(struct lua_State *)" (?tolua_server_Student_Run00@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_open，该符号在函数 "int __cdecl tolua_server_open(struct lua_State *)" (?tolua_server_open@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_register_gc，该符号在函数 "int __cdecl tolua_server_Student_new00_local(struct lua_State *)" (?tolua_server_Student_new00_local@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_usertype，该符号在函数 "void __cdecl tolua_reg_types(struct lua_State *)" (?tolua_reg_types@@YAXPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_beginmodule，该符号在函数 "int __cdecl tolua_server_open(struct lua_State *)" (?tolua_server_open@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_endmodule，该符号在函数 "int __cdecl tolua_server_open(struct lua_State *)" (?tolua_server_open@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_module，该符号在函数 "int __cdecl tolua_server_open(struct lua_State *)" (?tolua_server_open@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_cclass，该符号在函数 "int __cdecl tolua_server_open(struct lua_State *)" (?tolua_server_open@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_function，该符号在函数 "int __cdecl tolua_server_open(struct lua_State *)" (?tolua_server_open@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_pushusertype，该符号在函数 "int __cdecl tolua_server_Student_new00(struct lua_State *)" (?tolua_server_Student_new00@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_tonumber，该符号在函数 "int __cdecl tolua_server_Student_Run200(struct lua_State *)" (?tolua_server_Student_Run200@@YAHPEAUlua_State@@@Z) 中被引用
+lua_Student.obj : error LNK2019: 无法解析的外部符号 tolua_tousertype，该符号在函数 "int __cdecl tolua_collect_Student(struct lua_State *)" (?tolua_collect_Student@@YAHPEAUlua_State@@@Z) 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 lua_close，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 lua_getfield，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 lua_pcall，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 luaL_openlibs，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 luaL_loadfile，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 luaL_newstate，该符号在函数 "struct lua_State * __cdecl rtLuaVm(void)" (?rtLuaVm@@YAPEAUlua_State@@XZ) 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 "int __cdecl tolua_Student_open(struct lua_State *)" (?tolua_Student_open@@YAHPEAUlua_State@@@Z)，该符号在函数 main 中被引用
+../../../src\lua51.lib : warning LNK4272: 库计算机类型“X86”与目标计算机类型“x64”冲突
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Lua Develope Package\toluapp-master\tolua++\win32\vs2013\StaticLibrary\Debug\tolua++.lib : warning LNK4272: 库计算机类型“X86”与目标计算机类型“x64”冲突
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Lua Develope Package\LuaJIT-2.0.4\LuaJIT-2.0.4\test\test\x64\Debug\test.exe : fatal error LNK1120: 24 个无法解析的外部命令

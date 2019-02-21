@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
+Debug|Win32|C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Lua Develope Package\LuaJIT-2.0.4\LuaJIT-2.0.4\test\test\|

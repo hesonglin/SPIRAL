@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
+withLua51_Release|Win32|C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Lua Develope Package\toluapp-master\tolua++\win32\vc7\|

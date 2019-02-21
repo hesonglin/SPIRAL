@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
+Debug|Win32|C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Lua Develope Package\lua-5.1.4\lua-5.1.4\vs2013\StaticLibrary\|

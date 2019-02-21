@@ -1,0 +1,16 @@
+﻿cl : 命令行 warning D9025: 正在重写“/sdl”(用“/GS-”)
+  tolua_to.c
+  tolua_push.c
+  tolua_map.c
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\lua develope package\toluapp-master\tolua++\src\lib\tolua_map.c(398): warning C4090: “函数”: 不同的“const”限定符
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\lua develope package\toluapp-master\tolua++\src\lib\tolua_map.c(395): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(255): note: 参见“strncat”的声明
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\lua develope package\toluapp-master\tolua++\src\lib\tolua_map.c(525): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(255): note: 参见“strncat”的声明
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\lua develope package\toluapp-master\tolua++\src\lib\tolua_map.c(526): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(255): note: 参见“strncat”的声明
+  tolua_is.c
+c:\users\administrator\documents\visual studio 2015\projects\myprojects\lua develope package\toluapp-master\tolua++\src\lib\tolua_is.c(119): warning C4114: 多次使用同一类型限定符
+  tolua_event.c
+  正在生成代码...
+  StaticLibrary.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Lua Develope Package\toluapp-master\tolua++\win32\vs2013\StaticLibrary\Debug\tolua++.lib
