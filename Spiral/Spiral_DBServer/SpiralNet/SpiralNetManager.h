@@ -8,7 +8,8 @@
 #include <event2/util.h>
 #include <event2/event.h>
 #include <list>
-
+//#include "SpiralDbBuffer.h"
+#include"SpiralDbBuffer.h"
 #include <string>
 #pragma comment(lib, "libevent.lib")
 #pragma comment(lib, "ws2_32.lib")

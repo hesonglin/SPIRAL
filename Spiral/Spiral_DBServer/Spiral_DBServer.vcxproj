@@ -101,12 +101,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Dependencies\hiredis\hiredis_win\hiredis;C:\Program Files\MySQL\MySQL Server 5.5\include;C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Dependencies\libevent\include;C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Dependencies\libevent\WIN32-Code\nmake;C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Spiral_DBServer\SpiralNet;C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Spiral_DBServer\SpiralBase;C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Spiral_DBServer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\Spiral\Dependencies\hiredis\hiredis_win\hiredis;C:\Program Files\MySQL\MySQL Server 5.5\include;..\..\Spiral\Dependencies\libevent\include;..\..\Spiral\Dependencies\libevent\WIN32-Code\nmake;..\..\Spiral\Spiral_DBServer\SpiralNet;..\..\Spiral\Spiral_DBServer\SpiralBase;..\..\Spiral\Spiral_DBServer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Program Files\MySQL\MySQL Server 5.5\lib;C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Dependencies\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files\MySQL\MySQL Server 5.5\lib;..\..\Spiral\Dependencies\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

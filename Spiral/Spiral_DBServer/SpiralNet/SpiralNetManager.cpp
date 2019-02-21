@@ -123,6 +123,7 @@ void SpiralNetManager::conn_writecb(struct bufferevent *bev, void *user_data)
 void SpiralNetManager::conn_readcb(struct bufferevent *bev, void *user_data)
 {
 	struct evbuffer *input = bufferevent_get_input(bev);
+	SpiralDbBuffer * dbBuffer = SpiralDbBuffer::getInstance();
 	size_t sz = evbuffer_get_length(input);
 	char msg[1024] = { '\0' };
 	if (sz > 0)

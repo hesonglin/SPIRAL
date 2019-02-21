@@ -4,7 +4,7 @@
 #include <iostream>
 
 //https://blog.csdn.net/zxng_work/article/details/78926413#mysql-c-api%E7%A7%BB%E6%A4%8D
-
+/*用于保存用户数据*/
 class SpiralSqlManager
 {
 public:

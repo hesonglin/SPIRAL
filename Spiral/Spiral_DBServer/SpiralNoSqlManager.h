@@ -4,6 +4,7 @@
 //http://www.cnblogs.com/linjiqin/archive/2013/05/27/3101694.html
 #include "hiredis.h"
 #include <string>
+/*非关系型数据库redis主要是提供给外部接口调用的，例如http相关的服务，后台统计。*/
 class SpiralNoSqlManager
 {
 public:

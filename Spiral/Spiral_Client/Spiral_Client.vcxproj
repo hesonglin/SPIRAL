@@ -101,12 +101,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Spiral_Client;C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Spiral_Client\SpiralNet;C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Spiral_Client\SpiralBase;C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Dependencies\libevent\WIN32-Code\nmake;C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Dependencies\libevent\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\Spiral\Spiral_Client;..\..\Spiral\Spiral_Client\SpiralNet;..\..\Spiral\Spiral_Client\SpiralBase;..\..\Spiral\Dependencies\libevent\WIN32-Code\nmake;..\..\Spiral\Dependencies\libevent\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MyProjects\Spiral\Dependencies\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\Spiral\Dependencies\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
