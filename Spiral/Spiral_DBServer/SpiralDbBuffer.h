@@ -7,7 +7,7 @@ public:
 	
 	~SpiralDbBuffer();
 	static SpiralDbBuffer* SpiralDbBuffer::getInstance();
-	int updateDbBuffer();
+	int updateDbBuffer(char * buffer);
 	static SpiralDbBuffer* INSTANCE;
 private:
 	SpiralDbBuffer();

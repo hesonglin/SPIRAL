@@ -102,12 +102,16 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\Spiral\Dependencies\tolua++\include;..\..\Spiral\Dependencies\lua-5.1.4\lua-5.1.4\src;..\..\Spiral\Spiral;..\..\Spiral\Spiral\SpiralNet;..\..\Spiral\Spiral\SpiralBase;..\..\Spiral\Dependencies\libevent\WIN32-Code\nmake;..\..\Spiral\Dependencies\libevent\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\Spiral\Dependencies\protobuf-3.1.x\src;..\..\Spiral\Dependencies\tolua++\include;..\..\Spiral\Dependencies\lua-5.1.4\lua-5.1.4\src;..\..\Spiral\Spiral;..\..\Spiral\Spiral\SpiralNet;..\..\Spiral\Spiral\SpiralBase;..\..\Spiral\Dependencies\libevent\WIN32-Code\nmake;..\..\Spiral\Dependencies\libevent\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>..\..\Spiral\Dependencies\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;libprotobufd.lib;libprotocd.lib;libprotobuf-lited.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/NODEFAULTLIB:"msvcrt.lib" %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -156,6 +160,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StreamLuaExport.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="SystemInfo.pb.h" />
     <ClInclude Include="SystemLuaExport.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -180,6 +185,9 @@
     </ClCompile>
     <ClCompile Include="StreamLuaExport.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="SystemInfo.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SystemLuaExport.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -193,6 +201,11 @@
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tolua++.exe  -n system -o lua_SystemLuaExport.cpp SystemLuaExport.pkg</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lua_SystemLuaExport.cpp</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="SystemInfo.proto">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">protoc -I=./ --cpp_out=./ SystemInfo.proto</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SystemInfo.pb.cc;SystemInfo.pb.h;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

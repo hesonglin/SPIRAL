@@ -32,7 +32,7 @@ int main()
 	SpiralNoSqlManager * nomysql = SpiralNoSqlManager::getInstance();
 	nomysql->initRedisConn();
 	mysql->connectSql();
-	nomysql->doTest();
+	//nomysql->doTest();
 	printf("开始连接服务端...\n");
 	while (true)
 	{

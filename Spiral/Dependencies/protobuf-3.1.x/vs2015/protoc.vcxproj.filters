@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\compiler\main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4EC5BBD2-F881-315A-9F6B-4AC7A10D6227}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

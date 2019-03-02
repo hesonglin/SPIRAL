@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\a993eaed35cfeaa69b3a638a4270b1bd\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{623A9C67-8935-3149-B1AF-4A6FBEC66D9F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

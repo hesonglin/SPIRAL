@@ -41,11 +41,11 @@ void SpiralSqlManager::connectSql()
 	for (int i = 0; i < num_fields; i++)
 	{
 		std::cout << "field " << i << " name is " << fields[i].name << std::endl;
-		nomysql->setValue(fields[i].name, fields[i].db);
+		//nomysql->setValue(fields[i].name, fields[i].db);
 	}
 
 	for (int i = 0; i < num_fields; i++)
 	{
-		std::cout << "key: " << fields[i].name << " value: " << nomysql->getValue(fields[i].name) << std::endl;
+		//std::cout << "key: " << fields[i].name << " value: " << nomysql->getValue(fields[i].name) << std::endl;
 	}
 }

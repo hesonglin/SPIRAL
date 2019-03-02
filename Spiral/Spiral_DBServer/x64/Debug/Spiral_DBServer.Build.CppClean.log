@@ -1,13 +1,3 @@
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\spiral_dbserver\x64\debug\spiral_dbserver.pch
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\spiral_dbserver\x64\debug\vc140.pdb
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\spiral_dbserver\x64\debug\vc140.idb
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\spiral_dbserver\x64\debug\stdafx.obj
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\spiral_dbserver\x64\debug\basethread.obj
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\spiral_dbserver\x64\debug\spiraldbbuffer.obj
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\spiral_dbserver\x64\debug\spiralnetmanager.obj
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\spiral_dbserver\x64\debug\spiralnosqlmanager.obj
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\spiral_dbserver\x64\debug\spiralsqlmanager.obj
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\spiral_dbserver\x64\debug\spiral_dbserver.obj
 e:\spiral\spiral\spiral\spiral_dbserver\x64\debug\spiral_dbserver.pch
 e:\spiral\spiral\spiral\spiral_dbserver\x64\debug\vc140.pdb
 e:\spiral\spiral\spiral\spiral_dbserver\x64\debug\vc140.idb
@@ -18,9 +8,6 @@ e:\spiral\spiral\spiral\spiral_dbserver\x64\debug\spiralnetmanager.obj
 e:\spiral\spiral\spiral\spiral_dbserver\x64\debug\spiralnosqlmanager.obj
 e:\spiral\spiral\spiral\spiral_dbserver\x64\debug\spiralsqlmanager.obj
 e:\spiral\spiral\spiral\spiral_dbserver\x64\debug\spiral_dbserver.obj
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\x64\debug\spiral_dbserver.ilk
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\x64\debug\spiral_dbserver.exe
-c:\users\administrator\documents\visual studio 2015\projects\myprojects\spiral\x64\debug\spiral_dbserver.pdb
 e:\spiral\spiral\spiral\x64\debug\spiral_dbserver.ilk
 e:\spiral\spiral\spiral\x64\debug\spiral_dbserver.exe
 e:\spiral\spiral\spiral\x64\debug\spiral_dbserver.pdb

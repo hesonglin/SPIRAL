@@ -26,20 +26,16 @@ SpiralNetManager* SpiralNetManager::getInstance()
 
 void SpiralNetManager::routine()
 {
-	//netInit();
-	/*while (true)
-	{
-		delay(1000);
-		printf("SpiralNetManager thread routine\n");
-	}*/
-	//event_base_dispatch(base);
 	while (true)
 	{
+		if (!isConnected)
+		{
+			netInit();
+			Sleep(1000);//每隔1秒钟，检查一次是否连接 
+		}
 		int res = event_base_loop(base, EVLOOP_NONBLOCK);
 		Sleep(1);
 	}
-	//event_base_loop(base, EVLOOP_NONBLOCK);
-	//evconnlistener_free(listener);
 	event_base_free(base);
 }
 int SpiralNetManager::netInit()//网络模块初始化，包括加载配置
@@ -75,9 +71,6 @@ int SpiralNetManager::netInit()//网络模块初始化，包括加载配置
 		printf("Connect failed\n");
 		return 1;
 	}
-	//evconnlistener_set_error_cb(listener, accept_error_cb); //接受错误反馈
-	//event_base_dispatch(base);
-	//event_base_free(base);
 	return 0;
 }
 
@@ -103,14 +96,6 @@ int SpiralNetManager::sendBroadcastMsg(const char* msg,int sz)//广播
 
 void SpiralNetManager::conn_writecb(struct bufferevent *bev, void *user_data)
 {
-	//    struct evbuffer *output = bufferevent_get_output(bev);
-	//    if (evbuffer_get_length(output) == 0)
-	//    {
-	//        printf("Output evbuffer is flushed\n");
-	//        bufferevent_free(bev);
-	//    }
-	//delay 1 second
-    //delay(1000);
 	static int msg_num = 1;
 	char reply_msg[1000] = { '\0' };
 	char *str = "I receive a message from server ";
@@ -120,19 +105,21 @@ void SpiralNetManager::conn_writecb(struct bufferevent *bev, void *user_data)
 	msg_num++;
 }
 
+//网络模块接受到数据
 void SpiralNetManager::conn_readcb(struct bufferevent *bev, void *user_data)
 {
 	struct evbuffer *input = bufferevent_get_input(bev);
 	SpiralDbBuffer * dbBuffer = SpiralDbBuffer::getInstance();
-	dbBuffer->updateDbBuffer();
 	size_t sz = evbuffer_get_length(input);
-	char msg[1024] = { '\0' };
+	//char msg[1024] = { '\0' };
+	char buffer[1024] = { '\0' };
 	if (sz > 0)
 	{
 		
-		bufferevent_read(bev, msg, sz);
+		bufferevent_read(bev, &buffer, sz);
 		//sendBroadcastMsg(msg, sz);
-		printf("%s\n", msg);
+		dbBuffer->updateDbBuffer(buffer);
+		printf("%s\n", &buffer);
 	}
 
 	

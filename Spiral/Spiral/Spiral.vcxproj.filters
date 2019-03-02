@@ -31,6 +31,9 @@
     <Filter Include="SpiralScript\LuaExport">
       <UniqueIdentifier>{e2d4bd8d-6c0f-467a-b2ea-5c6b2f20ff05}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SpiralNet\SpiralNetProtocol">
+      <UniqueIdentifier>{96dc988d-6215-4219-baa1-eae9795541ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -65,6 +68,9 @@
     </ClInclude>
     <ClInclude Include="Student.h">
       <Filter>SpiralScript\LuaExport</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemInfo.pb.h">
+      <Filter>SpiralNet\SpiralNetProtocol</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +110,9 @@
     <ClCompile Include="lua_SystemLuaExport.cpp">
       <Filter>SpiralScript\LuaExport</Filter>
     </ClCompile>
+    <ClCompile Include="SystemInfo.pb.cc">
+      <Filter>SpiralNet\SpiralNetProtocol</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="StreamLuaExport.pkg">
@@ -116,6 +125,9 @@
     </CustomBuild>
     <CustomBuild Include="SystemLuaExport.pkg">
       <Filter>SpiralScript\LuaExport</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SystemInfo.proto">
+      <Filter>SpiralNet\SpiralNetProtocol</Filter>
     </CustomBuild>
   </ItemGroup>
 </Project>

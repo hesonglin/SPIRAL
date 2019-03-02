@@ -1,6 +1,32 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Spiral.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Performing Custom Build Tools
+  Performing Custom Build Tools
+  Performing Custom Build Tools
+  stdafx.cpp
+  SystemLuaExport.cpp
+  Student.cpp
+  StreamLuaExport.cpp
+  SpiralNetManager.cpp
+e:\spiral\spiral\spiral\spiral\spiralnet\spiralnetmanager.cpp(149): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“intptr_t”
+  e:\spiral\spiral\spiral\spiral\spiralnet\spiralnetmanager.cpp(149): note: 请考虑在格式字符串中使用“%Id”
+e:\spiral\spiral\spiral\spiral\spiralnet\spiralnetmanager.cpp(185): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“intptr_t”
+  e:\spiral\spiral\spiral\spiral\spiralnet\spiralnetmanager.cpp(185): note: 请考虑在格式字符串中使用“%Id”
+  SpiralNetThread.cpp
+  SpiralNetIO.cpp
+  BaseThread.cpp
   Spiral.cpp
 e:\spiral\spiral\spiral\spiral\spiral.cpp(61): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
 e:\spiral\spiral\spiral\spiral\spiral.cpp(63): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  LuaScript.cpp
+  正在生成代码...
+  SystemInfo.pb.cc
+e:\spiral\spiral\spiral\dependencies\protobuf-3.1.x\src\google\protobuf\message_lite.h(247): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\spiral\spiral\spiral\dependencies\protobuf-3.1.x\src\google\protobuf\wire_format_lite_inl.h(865): warning C4267: “参数”: 从“size_t”转换到“google::protobuf::uint32”，可能丢失数据
+e:\spiral\spiral\spiral\spiral\systeminfo.pb.cc(228): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\spiral\spiral\spiral\spiral\systeminfo.pb.cc(270): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\spiral\spiral\spiral\spiral\systeminfo.pb.cc(292): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  lua_SystemLuaExport.cpp
+  lua_Student.cpp
+  正在生成代码...
   Spiral.vcxproj -> E:\SPIRAL\SPIRAL\Spiral\x64\Debug\Spiral_Server.exe
   Spiral.vcxproj -> E:\SPIRAL\SPIRAL\Spiral\x64\Debug\Spiral_Server.pdb (Full PDB)

@@ -12,8 +12,10 @@ SpiralDbBuffer::~SpiralDbBuffer()
 {
 }
 
-int SpiralDbBuffer::updateDbBuffer()
+int SpiralDbBuffer::updateDbBuffer(char * buffer)
 {
+	//流转化为角色数据（结构体）
+	//角色数据转化为mysql保存
 	return 0;
 }
 

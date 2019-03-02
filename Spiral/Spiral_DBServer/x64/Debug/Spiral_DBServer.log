@@ -1,11 +1,3 @@
-﻿  stdafx.cpp
-  Spiral_DBServer.cpp
-  SpiralSqlManager.cpp
-  SpiralNoSqlManager.cpp
-e:\spiral\spiral\spiral\spiral_dbserver\spiralnosqlmanager.cpp(61): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
-  SpiralNetManager.cpp
-  SpiralDbBuffer.cpp
-  BaseThread.cpp
-  正在生成代码...
+﻿  SpiralNetManager.cpp
   Spiral_DBServer.vcxproj -> E:\SPIRAL\SPIRAL\Spiral\x64\Debug\Spiral_DBServer.exe
   Spiral_DBServer.vcxproj -> E:\SPIRAL\SPIRAL\Spiral\x64\Debug\Spiral_DBServer.pdb (Full PDB)

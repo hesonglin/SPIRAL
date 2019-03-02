@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Building Custom Rule E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake/CMakeLists.txt
+  CMake does not need to re-run because E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/vs2015/CMakeFiles/generate.stamp is up-to-date.
+  main.cc
+  protoc.vcxproj -> E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\..\..\..\Spiral\protoc.exe
+  protoc.vcxproj -> ./Debug/protoc.pdb (Full PDB)

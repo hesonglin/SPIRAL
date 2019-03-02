@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\arena.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\arenastring.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\extension_set.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\generated_message_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\io\coded_stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\io\zero_copy_stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\io\zero_copy_stream_impl_lite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\message_lite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\repeated_field.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\atomicops_internals_x86_gcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\atomicops_internals_x86_msvc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\bytestream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\int128.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\once.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\status.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\statusor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\stringpiece.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\stringprintf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\structurally_valid.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\strutil.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\time.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\wire_format_lite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4EC5BBD2-F881-315A-9F6B-4AC7A10D6227}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

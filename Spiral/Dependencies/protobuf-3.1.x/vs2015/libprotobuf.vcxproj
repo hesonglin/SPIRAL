@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3685E3E7-CDE1-3796-AD46-5F9C1416BB6A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>libprotobuf</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\lib\Debug</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libprotobuf.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libprotobufd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libprotobuf.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libprotobuf</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libprotobuf.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libprotobuf</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libprotobuf.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libprotobuf</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake -BE:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/vs2015 --check-stamp-file E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/vs2015/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\CMakeLists.txt;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\extract_includes.bat.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\install.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotobuf-lite.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotobuf.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotoc.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-config-version.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-config.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-module.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-options.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protoc.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeCCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeCXXCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeRCCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeSystem.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake -BE:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/vs2015 --check-stamp-file E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/vs2015/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\CMakeLists.txt;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\extract_includes.bat.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\install.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotobuf-lite.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotobuf.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotoc.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-config-version.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-config.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-module.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-options.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protoc.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeCCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeCXXCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeRCCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeSystem.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake -BE:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/vs2015 --check-stamp-file E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/vs2015/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\CMakeLists.txt;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\extract_includes.bat.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\install.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotobuf-lite.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotobuf.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotoc.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-config-version.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-config.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-module.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-options.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protoc.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeCCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeCXXCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeRCCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeSystem.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake -BE:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/vs2015 --check-stamp-file E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/vs2015/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/SPIRAL/SPIRAL/Spiral/Dependencies/protobuf-3.1.x/cmake/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\CMakeLists.txt;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\extract_includes.bat.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\install.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotobuf-lite.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotobuf.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\libprotoc.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-config-version.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-config.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-module.cmake.in;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protobuf-options.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\protoc.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeCCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeCXXCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeRCCompiler.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\3.14.0-rc2\CMakeSystem.cmake;E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\arena.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\arenastring.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\extension_set.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\generated_message_util.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\io\coded_stream.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\io\zero_copy_stream.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\io\zero_copy_stream_impl_lite.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\message_lite.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\repeated_field.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\atomicops_internals_x86_gcc.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\atomicops_internals_x86_msvc.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\bytestream.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\common.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\int128.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\once.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\status.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\statusor.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\stringpiece.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\stringprintf.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\structurally_valid.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\strutil.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\time.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\wire_format_lite.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\any.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\any.pb.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\api.pb.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\compiler\importer.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\compiler\parser.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\descriptor.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\descriptor.pb.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\descriptor_database.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\duration.pb.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\dynamic_message.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\empty.pb.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\extension_set_heavy.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\field_mask.pb.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\generated_message_reflection.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\io\gzip_stream.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\io\printer.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\io\strtod.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\io\tokenizer.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\io\zero_copy_stream_impl.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\map_field.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\message.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\reflection_ops.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\service.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\source_context.pb.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\struct.pb.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\mathlimits.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\stubs\substitute.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\text_format.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\timestamp.pb.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\type.pb.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\unknown_field_set.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\field_comparator.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\field_mask_util.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\datapiece.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\default_value_objectwriter.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\error_listener.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\field_mask_utility.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\json_escaping.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\json_objectwriter.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\json_stream_parser.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\object_writer.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\proto_writer.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\protostream_objectsource.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\protostream_objectwriter.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\type_info.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\type_info_test_helper.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\internal\utility.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\json_util.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\message_differencer.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\time_util.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\util\type_resolver_util.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\wire_format.cc" />
+    <ClCompile Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\src\google\protobuf\wrappers.pb.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\SPIRAL\SPIRAL\Spiral\Dependencies\protobuf-3.1.x\vs2015\ZERO_CHECK.vcxproj">
+      <Project>{6DB20D9C-EA38-338A-A931-F666D0105C07}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
