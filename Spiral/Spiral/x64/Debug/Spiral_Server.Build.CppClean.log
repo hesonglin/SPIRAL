@@ -14,8 +14,11 @@ e:\spiral\spiral\spiral\spiral\x64\debug\systemluaexport.obj
 e:\spiral\spiral\spiral\spiral\x64\debug\lua_student.obj
 e:\spiral\spiral\spiral\spiral\x64\debug\lua_systemluaexport.obj
 e:\spiral\spiral\spiral\spiral\x64\debug\systeminfo.pb.obj
+e:\spiral\spiral\spiral\spiral\x64\debug\systemprotoinfo.obj
 e:\spiral\spiral\spiral\spiral\lua_student.cpp
 e:\spiral\spiral\spiral\spiral\lua_systemluaexport.cpp
+e:\spiral\spiral\spiral\spiral\systeminfo.pb.cc
+e:\spiral\spiral\spiral\spiral\systeminfo.pb.h
 e:\spiral\spiral\spiral\x64\debug\spiral_server.ilk
 e:\spiral\spiral\spiral\x64\debug\spiral_server.exe
 e:\spiral\spiral\spiral\x64\debug\spiral_server.pdb

@@ -34,6 +34,12 @@
     <Filter Include="SpiralNet\SpiralNetProtocol">
       <UniqueIdentifier>{96dc988d-6215-4219-baa1-eae9795541ae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SpiralNet\SpiralNetProtocol\Protocol">
+      <UniqueIdentifier>{48618c70-3b78-4ce7-a22f-7983be8c76fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralNet\SpiralNetProtocol\Manager">
+      <UniqueIdentifier>{2fb4cbc3-2ccc-43a3-88cd-2488fcdbcd29}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -70,7 +76,10 @@
       <Filter>SpiralScript\LuaExport</Filter>
     </ClInclude>
     <ClInclude Include="SystemInfo.pb.h">
-      <Filter>SpiralNet\SpiralNetProtocol</Filter>
+      <Filter>SpiralNet\SpiralNetProtocol\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemProtoInfo.h">
+      <Filter>SpiralNet\SpiralNetProtocol\Manager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -111,7 +120,10 @@
       <Filter>SpiralScript\LuaExport</Filter>
     </ClCompile>
     <ClCompile Include="SystemInfo.pb.cc">
-      <Filter>SpiralNet\SpiralNetProtocol</Filter>
+      <Filter>SpiralNet\SpiralNetProtocol\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemProtoInfo.cpp">
+      <Filter>SpiralNet\SpiralNetProtocol\Manager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -127,7 +139,7 @@
       <Filter>SpiralScript\LuaExport</Filter>
     </CustomBuild>
     <CustomBuild Include="SystemInfo.proto">
-      <Filter>SpiralNet\SpiralNetProtocol</Filter>
+      <Filter>SpiralNet\SpiralNetProtocol\Protocol</Filter>
     </CustomBuild>
   </ItemGroup>
 </Project>

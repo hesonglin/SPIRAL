@@ -17,6 +17,8 @@
 #include "SpiralNetIO.h"
 #include "LuaScript.h"
 
+#include "SystemProtoInfo.h"
+
 #pragma comment(lib, "libevent.lib")
 #pragma comment(lib, "ws2_32.lib")
 
@@ -37,7 +39,12 @@ int main(int argc, char **argv)
 	luaScript->loadFunctionConfig();
 	luaScript->startUpLuaScript();
 
+	printf("protobuf3.0 ²âÊÔ\n");
+	SystemProtoInfo * protoInfo = new SystemProtoInfo();
+	protoInfo->writeName("hsl");
+	protoInfo->writeId(517);
 
+	protoInfo->test();
 	while (true)
 	{
 		/*netManager->startUp();*/

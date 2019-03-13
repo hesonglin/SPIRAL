@@ -162,6 +162,7 @@
     <ClInclude Include="Student.h" />
     <ClInclude Include="SystemInfo.pb.h" />
     <ClInclude Include="SystemLuaExport.h" />
+    <ClInclude Include="SystemProtoInfo.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +190,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SystemLuaExport.cpp" />
+    <ClCompile Include="SystemProtoInfo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StreamLuaExport.pkg" />
