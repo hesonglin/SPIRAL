@@ -18,6 +18,8 @@
 #include "LuaScript.h"
 
 #include "SystemProtoInfo.h"
+#include "SpiralSqlManager.h"
+#include "SpiralNoSqlManager.h"
 
 #pragma comment(lib, "libevent.lib")
 #pragma comment(lib, "ws2_32.lib")
@@ -32,22 +34,26 @@ int main(int argc, char **argv)
 	printf("启动网络监听...\n");
 	netManager->netInit();
 	netManager->start();
-	//netPool->start();
+
 	printf("开启脚本系统...\n");
-	//lua_State* L = luaL_newstate();
 	LuaScript *luaScript = LuaScript::getInstance();
 	luaScript->loadFunctionConfig();
 	luaScript->startUpLuaScript();
 
-	printf("protobuf3.0 测试\n");
+	printf("protobuf3.1 测试\n");
 	SystemProtoInfo * protoInfo = new SystemProtoInfo();
 	protoInfo->writeName("hsl");
 	protoInfo->writeId(517);
+	//protoInfo->test();
 
-	protoInfo->test();
+	printf("测试数据库模块\n");
+	SpiralSqlManager * mysql = SpiralSqlManager::getInstance();
+	SpiralNoSqlManager * nomysql = SpiralNoSqlManager::getInstance();
+	nomysql->initRedisConn();
+	mysql->connectSql();
+
 	while (true)
 	{
-		/*netManager->startUp();*/
 		char msg[100] = "";
 		int clientId = 0;
 		printf("请输入消息（rsf为脚本热更）:\n");
@@ -76,39 +82,5 @@ int main(int argc, char **argv)
 		int i = 0;
 		i = i + 1;
 	}
-/*#ifdef WIN32
-	WSAData wsaData;
-	WSAStartup(MAKEWORD(2, 0), &wsaData);
-#endif
-	struct sockaddr_in sin;
-	memset(&sin, 0, sizeof(sin));
-	sin.sin_family = AF_INET;
-	sin.sin_port = htons(PORT);
-
-	struct evconnlistener *listener;
-	struct event_base *base = event_base_new();
-	if (!base)
-	{
-		printf("Could not initialize libevent\n");
-		return 1;
-	}
-	listener = evconnlistener_new_bind(base, listener_cb, (void *)base,
-		LEV_OPT_REUSEABLE | LEV_OPT_CLOSE_ON_FREE, -1,
-		(struct sockaddr*)&sin,
-		sizeof(sin));
-
-	if (!listener)
-	{
-		printf("Could not create a listener\n");
-		return 1;
-	}
-
-	event_base_dispatch(base);
-	evconnlistener_free(listener);
-	event_base_free(base);
-
-	printf("done\n");
-	return 0;*/
 	system("pause");
-	//event_base_dump_events();
 }

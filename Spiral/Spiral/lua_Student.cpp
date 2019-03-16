@@ -1,6 +1,6 @@
 /*
 ** Lua binding: server
-** Generated automatically by tolua++-1.0.92 on Wed Mar 13 21:28:17 2019.
+** Generated automatically by tolua++-1.0.92 on Thu Mar 14 11:01:03 2019.
 */
 
 #ifndef __cplusplus

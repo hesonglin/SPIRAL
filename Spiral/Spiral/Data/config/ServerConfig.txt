@@ -1,0 +1,68 @@
+﻿GameServer =
+{
+	--服务器名称
+	ServerName = "gameworld_999",
+	ServerIndex = 976,
+	--WebHost = "192.168.1.97",
+	--WebPort = "8080",
+    
+    --所属运营商标识符(主要用于处理不同平台开启的逻辑代码小差异)
+    SPID = "neiwang1", 
+	
+	--数据库连接配置
+	SQL = 
+	{ 
+		Host =  "127.0.0.1", --      
+		Port = 3306, 
+		DBName = "actordb_yjtz", 
+		DBUser = "root", 
+		DBPass = "G+mI2cwxz3xVwrR1s/KU7g=="
+	}, 
+	
+	GlobalSQL = 
+	{ 
+		Host =  "127.0.0.1",
+		Port = 3306, 
+		DBName = "globaldata_yjtz", 
+		DBUser = "root", 
+		DBPass = "G+mI2cwxz3xVwrR1s/KU7g=="
+	}, --0987abc123
+
+	--网关绑定地址和端口
+	GateService = 
+	{ 
+		Address = "0.0.0.0", 
+		Port = 6401
+	},
+
+	
+	--Log服务器绑定地址和端口
+	LogServer = 
+	{ 
+		--Address = "192.168.17.201", 
+		Address = "10.10.10.206", 
+		Port = 7401
+	},
+	--数据服务器绑定地址和端口
+	DbServer = 
+	{ 
+		Address = "10.10.10.108", 
+		Port = 5401
+	},
+	
+	-- 跨服服务地址和端口
+	CrossService = 
+	{
+		Address = "0.0.0.0", 
+		Port = 6030
+	},
+	-- 中心服务器
+	CenterServer =
+	{
+		Address = "127.0.0.1",
+		Port = 8401
+	},
+	
+}
+
+

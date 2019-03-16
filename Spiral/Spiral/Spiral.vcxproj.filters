@@ -40,6 +40,21 @@
     <Filter Include="SpiralNet\SpiralNetProtocol\Manager">
       <UniqueIdentifier>{2fb4cbc3-2ccc-43a3-88cd-2488fcdbcd29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SpiralConfig">
+      <UniqueIdentifier>{a2116016-914b-4f4b-b24c-9f7deac53983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralDB">
+      <UniqueIdentifier>{14bf1965-2bf2-4c96-acda-0c38423f9be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralDB\SpiralNoSql">
+      <UniqueIdentifier>{e8fe7e91-f823-419b-a53f-4e0cff850228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralDB\SpiralSql">
+      <UniqueIdentifier>{f10b7337-c53f-4893-841f-92eef052c03c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpiralDB\SpiralDbBuffer">
+      <UniqueIdentifier>{4f375b7e-9097-4650-b5da-8ead4de61f8a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -80,6 +95,18 @@
     </ClInclude>
     <ClInclude Include="SystemProtoInfo.h">
       <Filter>SpiralNet\SpiralNetProtocol\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralConfigManager.h">
+      <Filter>SpiralConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralDbBuffer.h">
+      <Filter>SpiralDB\SpiralDbBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralSqlManager.h">
+      <Filter>SpiralDB\SpiralSql</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiralNoSqlManager.h">
+      <Filter>SpiralDB\SpiralNoSql</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +151,18 @@
     </ClCompile>
     <ClCompile Include="SystemProtoInfo.cpp">
       <Filter>SpiralNet\SpiralNetProtocol\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralConfigManager.cpp">
+      <Filter>SpiralConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralDbBuffer.cpp">
+      <Filter>SpiralDB\SpiralDbBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralSqlManager.cpp">
+      <Filter>SpiralDB\SpiralSql</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralNoSqlManager.cpp">
+      <Filter>SpiralDB\SpiralNoSql</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

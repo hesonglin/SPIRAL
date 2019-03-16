@@ -1,5 +1,8 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Spiral.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  SystemProtoInfo.cpp
-e:\spiral\spiral\spiral\dependencies\protobuf-3.1.x\src\google\protobuf\message_lite.h(247): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  SpiralSqlManager.cpp
+  SpiralNoSqlManager.cpp
+e:\spiral\spiral\spiral\spiral\spiralnosqlmanager.cpp(62): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+  SpiralDbBuffer.cpp
+  正在生成代码...
   Spiral.vcxproj -> E:\SPIRAL\SPIRAL\Spiral\x64\Debug\Spiral_Server.exe
   Spiral.vcxproj -> E:\SPIRAL\SPIRAL\Spiral\x64\Debug\Spiral_Server.pdb (Full PDB)
