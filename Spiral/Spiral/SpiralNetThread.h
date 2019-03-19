@@ -19,11 +19,11 @@ public:
 	void routine();
 	struct event_base *base;
 	struct bufferevent *bev;
-	std::list<bufferevent *>  bev_list_;
-	std::map<long long int, connInfo>  client_list_;
+	std::list<bufferevent *>  bev_list_;//记录连接成功的buffer
+	std::map<long long int, connInfo>  client_list_;//记录连接的客户端
 	void clientConnected(int threadIndex, evutil_socket_t fd,bufferevent *bev);
 	//void clientDisconnected( evutil_socket_t fd); 
-	void clientDisconnected(bufferevent *bev);
+	void clientDisconnected(evutil_socket_t fd);
 private:
 	int index;//记录创建线程池的时候，该线程的编号（不同于线程ID）
 };

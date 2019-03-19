@@ -24,6 +24,12 @@
 导致玩家体验不足，性能不足。如果创建net多个线程，当某一个线程内的
 玩家数量大于指定值，则开辟新的线程来处理信号，保证玩家操作能及时响应*/
 
+typedef struct NetInfo
+{
+	evutil_socket_t fd;//socket号
+	SpiralNetThread * pThread;//线程地址
+}NetInfo;
+
 class SpiralNetManager :public BaseThread
 {
 public:
@@ -39,6 +45,7 @@ public:
 	struct evconnlistener *listener;
 	struct event_base *base;
 	struct bufferevent *bev;
+	static struct NetInfo* netBuffer;//为了利于数据操作，提供libevent传递的参数内容
 	//BufferNetThread netList[5];
 	std::list<SpiralNetThread *>  thread_list_;
 	//std::map<evutil_socket_t,bufferevent *>  client_list_;

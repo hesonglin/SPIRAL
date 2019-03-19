@@ -1,7 +1,3 @@
-﻿  stdafx.cpp
-  Spiral_Client.cpp
-  SpiralNetManager.cpp
-  BaseThread.cpp
-  正在生成代码...
+﻿  SpiralNetManager.cpp
   Spiral_Client.vcxproj -> E:\SPIRAL\SPIRAL\Spiral\x64\Debug\Spiral_Client.exe
   Spiral_Client.vcxproj -> E:\SPIRAL\SPIRAL\Spiral\x64\Debug\Spiral_Client.pdb (Full PDB)

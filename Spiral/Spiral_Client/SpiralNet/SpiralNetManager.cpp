@@ -35,6 +35,11 @@ void SpiralNetManager::routine()
 	//event_base_dispatch(base);
 	while (true)
 	{
+		if (!isConnected)
+		{
+			netInit();
+			Sleep(1000);//每隔1秒钟，检查一次是否连接 
+		}
 		int res = event_base_loop(base, EVLOOP_NONBLOCK);
 		Sleep(1);
 	}
@@ -73,6 +78,7 @@ int SpiralNetManager::netInit()//网络模块初始化，包括加载配置
 	if (-1 == flag)
 	{
 		printf("Connect failed\n");
+		bufferevent_free(bev);
 		return 1;
 	}
 	//evconnlistener_set_error_cb(listener, accept_error_cb); //接受错误反馈

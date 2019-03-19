@@ -16,7 +16,7 @@ void SpiralNetThread::routine()
 {
 	while (true)
 	{
-		if (!base) { Sleep(500); continue; }
+		if (!base) { Sleep(1000); continue; }//Ã¿¸ô1s,¼ì²âÒ»´Î
 		event_base_loop(base, EVLOOP_NONBLOCK);
 		Sleep(1);
 	}
@@ -28,7 +28,7 @@ void SpiralNetThread::clientConnected(int threadIndex, evutil_socket_t fd, buffe
 	connInfo connBuffer;
 	connBuffer.threadIndex = threadIndex;
 	connBuffer.bev = bev;
-	bev_list_.push_back(bev);
+	//bev_list_.push_back(bev);
 	//connBuffer.fd = fd;
 	//client_list_[connBuffer] = bev;
 	Insert_Pair = client_list_.insert(std::pair<long long int, connInfo>((long long int)fd, connBuffer));
@@ -41,7 +41,7 @@ void SpiralNetThread::clientConnected(int threadIndex, evutil_socket_t fd, buffe
 		printf("client_list insert failure");
 	}
 }
-void SpiralNetThread::clientDisconnected(bufferevent *bev)
+void SpiralNetThread::clientDisconnected(evutil_socket_t fd)
 {
-
+	client_list_.erase(fd);//É¾³ý
 }

@@ -4,7 +4,7 @@
 int maxThreadNum = 5;
 
 std::list<bufferevent *>  SpiralNetManager::net_list_;
-
+NetInfo* SpiralNetManager::netBuffer = new NetInfo();//为了利于数据操作，提供libevent传递的参数内容
 //饿汉模式构造单例
 SpiralNetManager* SpiralNetManager::INSTANCE = new SpiralNetManager();
 
@@ -137,7 +137,9 @@ void SpiralNetManager::listener_cb(struct evconnlistener *listener, evutil_socke
 		event_base_loopbreak(pThread->base);
 		return;
 	}
-	bufferevent_setcb(bev, conn_readcb, conn_writecb, conn_eventcb,(void*)pThread);
+	netBuffer->fd = fd;
+	netBuffer->pThread = pThread;
+	bufferevent_setcb(bev, conn_readcb, conn_writecb, conn_eventcb,(void*)netBuffer);
 	bufferevent_enable(bev, EV_READ | EV_WRITE);
 	//net_list_.push_back(bev);//添加进网络列表中
 	//pThread->bev_list_.push_back(bev);
@@ -170,7 +172,7 @@ void SpiralNetManager::conn_writecb(struct bufferevent *bev, void *user_data)
 void SpiralNetManager::conn_readcb(struct bufferevent *bev, void *user_data)
 {
 	struct evbuffer *input = bufferevent_get_input(bev);
-	SpiralNetManager *net = (SpiralNetManager *)user_data;
+	NetInfo *net = (NetInfo *)user_data;
 	size_t sz = evbuffer_get_length(input);
 	char msg[1024] = { '\0' };
 	if (sz > 0)
@@ -180,23 +182,24 @@ void SpiralNetManager::conn_readcb(struct bufferevent *bev, void *user_data)
 		sendBroadcastMsg(msg, sz);
 		printf("%s\n", msg);
 	}
-	printf("child pthread_self= %d\n", net->getId());
+	printf("child fd = %d\n", net->fd);
 	std::thread::id;
 	
 }
 
 void SpiralNetManager::conn_eventcb(struct bufferevent *bev, short events, void *user_data)
 {
-	SpiralNetThread * pThread = (SpiralNetThread *)user_data;
+	NetInfo *net = (NetInfo *)user_data;
+	SpiralNetThread * pThread = net->pThread;
 	if (events & BEV_EVENT_EOF)
 	{
 		printf(" Server Connection closed\n");
-		pThread->clientDisconnected(bev);
+		pThread->clientDisconnected(net->fd);
 	}
 	else if (events & BEV_EVENT_ERROR)
 	{
 		printf(" Server Connection error\n");
-		pThread->clientDisconnected(bev);
+		pThread->clientDisconnected(net->fd);
 	}
 	else if (events & BEV_EVENT_READING)
 	{

@@ -43,6 +43,7 @@ int main(int argc, char **argv)
 		/*netManager->startUp();*/
 		char msg[100] = "";
 		int clientId = 0;
+		printf("请输入消息（rsf为脚本热更）:\n");
 		std::cin >> msg;
 		//auto res = strcmp(msg, "rsf");
 		if (strcmp(msg, "rsf") == 0)
@@ -55,8 +56,10 @@ int main(int argc, char **argv)
 		}
 		else
 		{
+			printf("请输入客户端ID:\n");
 			std::cin >> clientId;
 			netStream.sendBroadcastMsg(msg, strlen(msg));
+			//printf("\n");
 			netStream.sendMsg(clientId, msg, strlen(msg));
 		}
 		//scanf("%s", msg);
